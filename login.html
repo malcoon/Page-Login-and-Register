@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/e28e4d0b6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css" >
+</head>
+<body>
+
+<div class="container">
+
+
+    <div class="panel">
+
+        <div class="logo">
+            <a href="">
+                <img src="../login/assets/logoipsum-logo-11.svg" width="140" alt="Logo" />
+            </a>
+        </div>
+
+        <div class="alternative">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-git"></i>
+        </div>
+
+        <form>        
+            <div class="form-floating">
+                <label for="floatingInput">Email</label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            </div>
+            <div class="form-floating">
+                <label for="floatingPassword">Password</label>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="password">
+            </div>
+        
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+
+            <button class="btn-primary" type="submit">Log in</button>
+        </form>
+          
+        <div class="reset" >
+              <p>Did you forgot your password?</p>
+              <p id="recovery">Reset password</p>
+        </div>
+
+        <a href="register.html" class="create">Create Account</a>
+
+    </div>
+
+    <div class="recovery">
+        <h1>Recovery your Password</h1>
+
+        <div class="form-floating">
+            <label for="floatingPassword">Enter your email below and we'll send you a password reset link.</label>
+            <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
+        </div>
+
+        <button class="btn-primary" type="submit">Send link</button>
+    </div>
+
+</div>
+
+<script src="assets/script.js"></script>
+
+</body>
+</html>

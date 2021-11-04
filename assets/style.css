@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    transition: all .2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    display: flex;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.panel {
+    width: 22rem;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    z-index: 9999;
+}
+
+.alternative {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+    /* .title {
+        display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        font-weight: 600;
+        line-height: .8rem;
+        margin-top: 1rem;
+        color: #515151;
+    } */
+
+    .alternative:after {
+        content: 'OR';
+        font-size: .8rem;
+        position: absolute;
+        margin-top: 6.4rem;
+        padding: 0 .3rem;
+        color: #dfdfdf;
+        background: white;
+    }
+
+    .alternative i {
+        text-align: center;
+        font-size: 1.2rem;
+        width: 2.8rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        border-radius: .4rem;
+        margin: 0 .5rem;
+        cursor: pointer;
+        color: white;
+        background-color: #dfdfdf;
+    }
+
+        .alternative i:hover {
+            color: white;
+            background-color: #6900ff;
+        }
+
+form {
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    padding: 1.5rem 0;
+}
+
+    p.email, p.password {
+        font-size: .8rem;
+        font-weight: 500;
+        padding: .2rem 0;
+    }
+
+    .form-floating input {
+        border-radius: .4rem;
+        justify-content: center;
+        border: 2px solid #f2f2f2;
+        background: #f2f2f2;
+        padding: .8rem;
+        width: 100%;
+        margin-top: .2rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-floating label {
+        font-size: .8rem;
+        font-weight: 500;
+        color: #515151;
+    }
+
+    input::placeholder {
+        color: #aaa;
+    }
+
+    input:focus{
+        border-color: #6900ff;
+    }
+
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .3rem 0;
+    font-size: .8rem;
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+
+    input[type=checkbox]:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        top: 0;
+        left: 0;
+        background-color: #f2f2f2;
+        border-radius: 2px;
+    }
+
+    input[type=checkbox]:checked:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        top: 0;
+        left: 0;
+        background-color:#6900ff;
+        border-radius: 2px;
+    }
+
+    input[type=checkbox]:checked:after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        border-radius: 2px;
+    }
+
+.btn-primary {
+    background: #6900ff;
+    border: 1px solid #6900ff;
+    border-radius: .4rem;
+    text-align: center;
+    color: white;
+    width: 20rem;
+    height: 2.5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.reset {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .reset p {
+        font-size: .8rem;
+    }
+
+    .reset a {
+        font-size: .8rem;
+        color: #6900ff;
+    }
+
+.create {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    color: #6900ff;
+    font-size: 1.1rem;
+}
+
+p#recovery {
+    color: #6900ff;
+    cursor: pointer;
+}
+
+.recovery {
+    width: 20rem;
+    padding: 1rem;
+    border-radius: .4rem;
+    box-shadow: 0 0 .5rem #dfdfdf;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+}
+
+.recovery.active {
+    opacity: 1;
+    z-index: 99999;
+    transition: .4s linear;
+}
+
+    .recovery h1 {
+        font-size: 1.8rem;
+        padding: .8rem 0;
+    }
+
+    .recovery .form-floating label {
+        font-size: .9rem;
+        display: block;
+        margin: .5rem 0 1rem 0;
+    }
