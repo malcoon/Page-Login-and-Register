@@ -229,7 +229,7 @@ p#recovery {
 
 .recovery {
     width: 20rem;
-    padding: 1rem;
+    padding: 1.4rem;
     border-radius: .4rem;
     box-shadow: 0 0 .5rem #dfdfdf;
     background: #fff;
@@ -243,11 +243,31 @@ p#recovery {
     opacity: 0;
 }
 
+    .close {
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+        cursor: pointer;
+    }
+
 .recovery.active {
     opacity: 1;
     z-index: 99999;
-    transition: .4s linear;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
 
     .recovery h1 {
         font-size: 1.8rem;
