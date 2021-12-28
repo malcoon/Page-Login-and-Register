@@ -1,1 +1,1 @@
-https://malcoon.github.io/login/login.html
+https://malcoon.github.io/Page-Login-and-Register/
